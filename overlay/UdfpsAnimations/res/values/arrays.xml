@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array translatable="false" name="udfps_animation_styles">
+        <item>udfps_op_cosmos_recognizing_anim</item>
+        <item>udfps_op_energy_recognizing_anim</item>
+        <item>udfps_op_mclaren_recognizing_anim</item>
+        <item>udfps_op_ripple_recognizing_anim</item>
+        <item>udfps_op_scanning_recognizing_anim</item>
+        <item>udfps_op_stripe_recognizing_anim</item>
+        <item>udfps_op_wave_recognizing_anim</item>
+    </string-array>
+
+    <string-array translatable="false" name="udfps_animation_previews">
+        <item>udfps_op_cosmos_anim_60</item>
+        <item>udfps_op_energy_anim_35</item>
+        <item>udfps_op_mclaren_anim_45</item>
+        <item>udfps_op_ripple_anim_30</item>
+        <item>udfps_op_scanning_anim_18</item>
+        <item>udfps_op_stripe_anim_18</item>
+        <item>udfps_op_wave_anim_25</item>
+    </string-array>
+
+    <string-array translatable="false" name="udfps_animation_titles">
+        <item>Cosmos</item>
+        <item>Energy</item>
+        <item>McLaren</item>
+        <item>Ripple</item>
+        <item>Scanning (Cyberpunk 2077)</item>
+        <item>Stripe</item>
+        <item>Wave</item>
+    </string-array>
+
+</resources>

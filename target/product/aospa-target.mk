@@ -49,6 +49,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
 endif
 
+# UDFPS Animation effects
+PRODUCT_PACKAGES += \
+    UdfpsAnimations
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
