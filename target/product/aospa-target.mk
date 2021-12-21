@@ -40,6 +40,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+# UDFPS Animation effects
+PRODUCT_PACKAGES += \
+    UdfpsAnimations
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
