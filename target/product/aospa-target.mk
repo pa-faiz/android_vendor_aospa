@@ -76,6 +76,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
 
+# Pre-optimization
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
