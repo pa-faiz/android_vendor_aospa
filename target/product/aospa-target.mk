@@ -53,6 +53,10 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
