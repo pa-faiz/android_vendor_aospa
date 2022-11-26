@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     FontLinotteSourceOverlay \
     FontManropeOverlay \
     FontOnePlusSansOverlay  \
+    FontOnePlusSlateOverlay \
     FontOppoSansOverlay \
     FontUrbanistOverlay \
     FontAlbertSansOverlay \
