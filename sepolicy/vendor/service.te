@@ -1,1 +1,2 @@
 type hal_aospa_powershare_service, service_manager_type, vendor_service;
+type hal_lineage_health_service, service_manager_type, vendor_service;
