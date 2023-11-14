@@ -75,11 +75,11 @@ AOSPA_VERSION := $(shell echo -n $(AOSPA_VERSION) | tr -d '[:space:]')
 
 # Signing
 ifeq (user,$(TARGET_BUILD_VARIANT))
-ifneq (,$(wildcard .android-certs/releasekey.pk8))
-PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
+ifneq (,$(wildcard vendor/aospa/signing/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aospa/signing/keys/releasekey
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.oem_unlock_supported=1
 endif
-ifneq (,$(wildcard .android-certs/otakey.x509.pem))
-PRODUCT_OTA_PUBLIC_KEYS := .android-certs/otakey.x509.pem
+ifneq (,$(wildcard vendor/aospa/signing/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/aospa/signing/keys/otakey.x509.pem
 endif
 endif

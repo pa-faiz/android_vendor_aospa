@@ -6,3 +6,7 @@ prebuilt/
 
 # AOSPA translations
 translations/
+
+# Signing Keys
+signing/keys/*
+!signing/keys/BUILD
