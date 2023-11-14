@@ -203,6 +203,14 @@ endif
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
 
+# Signing
+ifneq (,$(wildcard vendor/aospa/signing/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aospa/signing/keys/releasekey
+endif
+ifneq (,$(wildcard vendor/aospa/signing/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/aospa/signing/keys/otakey.x509.pem
+endif
+
 # StrictMode
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Disable extra StrictMode features on all non-engineering builds
