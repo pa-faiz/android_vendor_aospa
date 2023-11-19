@@ -33,9 +33,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
 
-# Camera
+# OpenDelta
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    OpenDelta
 
 # Charger
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -166,7 +166,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/aospa/target/config/permissions/default_permissions_com.google.android.deskclock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default_permissions_com.google.android.deskclock.xml \
-    vendor/aospa/target/config/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+    vendor/aospa/target/config/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    vendor/aospa/target/config/permissions/aospa-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/aospa-power-whitelist.xml
 
 # Privapp-permissions
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
