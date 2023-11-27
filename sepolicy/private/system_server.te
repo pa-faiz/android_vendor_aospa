@@ -12,3 +12,6 @@ set_prop(system_server, device_config_tethering_prop)
 
 # Powershare
 hal_client_domain(system_server, hal_aospa_powershare)
+
+# CachedAppOptimizer
+allow system_server zygote_tmpfs:file rw_file_perms;
