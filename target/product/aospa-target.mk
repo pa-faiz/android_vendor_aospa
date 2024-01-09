@@ -19,6 +19,10 @@ PRODUCT_PACKAGES += \
 # AOSPA Version.
 $(call inherit-product, vendor/aospa/target/product/version.mk)
 
+# Aperture
+PRODUCT_PACKAGES += \
+    Aperture
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
