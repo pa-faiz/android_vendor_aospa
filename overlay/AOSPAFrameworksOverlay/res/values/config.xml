@@ -133,10 +133,12 @@
 
      <!-- Build properties from a GMS certified device against current platform SPL level -->
      <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>bullhead</item>   <!-- Build.DEVICE -->
-        <item>bullhead</item>   <!-- Build.PRODUCT -->
-        <item>Nexus 5X</item> <!-- Build.MODEL -->
-        <item>google/bullhead/bullhead:8.0.0/OPR6.170623.013/4283548:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>MANUFACTURER:motorola</item>
+        <item>BRAND:motorola</item>
+        <item>DEVICE:griffin</item>
+        <item>MODEL:XT1650-05</item>
+        <item>FINGERPRINT:motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys</item>
+        <item>PRODUCT:griffin_retcn</item>
      </string-array>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
