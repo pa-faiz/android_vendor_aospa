@@ -74,7 +74,7 @@ AOSPA_VERSION += $(AOSPA_BUILD)-$(BUILD_DATE)
 AOSPA_VERSION := $(shell echo -n $(AOSPA_VERSION) | tr -d '[:space:]')
 
 # Signing
-ifeq (user,$(TARGET_BUILD_VARIANT))
+ifneq (eng,$(TARGET_BUILD_VARIANT))
 ifneq (,$(wildcard vendor/aospa/signing/keys/releasekey.pk8))
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aospa/signing/keys/releasekey
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.oem_unlock_supported=1
