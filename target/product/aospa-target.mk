@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     UdfpsAnimations
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws \
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
