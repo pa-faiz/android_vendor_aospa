@@ -48,6 +48,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws \
 
+# DesktopMode
+PRODUCT_PACKAGES += \
+    DesktopMode
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
+
+$(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
