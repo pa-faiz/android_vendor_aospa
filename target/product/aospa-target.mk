@@ -57,6 +57,16 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 PRODUCT_PACKAGES += \
     GameSpace
 
+# Blur
+ifeq ($(TARGET_ENABLE_BLUR), true)
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+else
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+endif
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
