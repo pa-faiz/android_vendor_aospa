@@ -186,7 +186,8 @@ PRODUCT_COPY_FILES += \
     vendor/aospa/target/config/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/aospa/target/config/permissions/privapp-permissions-opendelta.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-opendelta.xml \
     vendor/aospa/target/config/permissions/aospa-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/aospa-power-whitelist.xml \
-    vendor/aospa/target/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml
+    vendor/aospa/target/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
+    vendor/aospa/target/config/permissions/org.lineageos.globalactions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.globalactions.xml
 
 # Preinstalled Packages
 PRODUCT_COPY_FILES += \
