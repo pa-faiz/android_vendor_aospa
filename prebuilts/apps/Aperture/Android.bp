@@ -1,0 +1,20 @@
+//
+// Copyright (C) 2022 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    name: "Aperture",
+    arch: {
+        arm64: {
+            apk: "Aperture.apk",
+        },
+    },
+    overrides: ["Camera2"],
+    presigned: true,
+    system_ext_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
