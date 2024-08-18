@@ -43,4 +43,23 @@
     <color name="system_neutral2_800">#202020</color>
     <color name="system_neutral2_900">#000000</color>
     <color name="system_neutral2_1000">#000000</color>
+
+    <!-- M3 colors -->
+    <color name="system_background_dark">#000000</color> <!-- background -->
+    <color name="system_on_background_dark">#e6e6e6</color> <!-- onBackground -->
+    <color name="system_surface_dark">#000000</color> <!-- surface -->
+    <color name="system_on_surface_dark">#e6e6e6</color> <!-- onSurface -->
+    <color name="system_surface_variant_dark">#4d4d4d</color> <!-- surfaceVariant -->
+    <color name="system_on_surface_variant_dark">#cccccc</color> <!-- onSurfaceVariant -->
+    <color name="system_surface_light">#e6e6e6</color> <!-- inverseSurface -->
+    <color name="system_on_surface_light">#333333</color> <!-- inverseOnSurface -->
+    <color name="system_outline_dark">#999999</color> <!-- outline -->
+    <color name="system_outline_variant_dark">#4d4d4d</color> <!-- outlineVariant -->
+    <color name="system_surface_bright_dark">#e6e6e6</color> <!-- surfaceBright -->
+    <color name="system_surface_dim_dark">#0f0f0f</color> <!-- surfaceDim -->
+    <color name="system_surface_container_dark">#1f1f1f</color> <!-- surfaceContainer -->
+    <color name="system_surface_container_high_dark">#2b2b2b</color> <!-- surfaceContainerHigh -->
+    <color name="system_surface_container_highest_dark">#383838</color> <!-- surfaceContainerHighest -->
+    <color name="system_surface_container_low_dark">#1a1a1a</color> <!-- surfaceContainerLow -->
+    <color name="system_surface_container_lowest_dark">#000000</color> <!-- surfaceContainerLowest -->
 </resources>
