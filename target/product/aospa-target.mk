@@ -31,6 +31,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # DesktopMode
 PRODUCT_PACKAGES += \
     DesktopMode
