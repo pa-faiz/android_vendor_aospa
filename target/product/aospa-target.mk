@@ -61,6 +61,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Ripple
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Blur
 ifeq ($(TARGET_ENABLE_BLUR), true)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
