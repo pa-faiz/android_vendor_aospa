@@ -39,6 +39,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+# Panic Button
+PRODUCT_PACKAGES += \
+    Ripple
+
 # Blur
 ifeq ($(TARGET_ENABLE_BLUR), true)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
