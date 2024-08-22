@@ -57,6 +57,10 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 PRODUCT_PACKAGES += \
     GameSpace
 
+# Panic Button
+PRODUCT_PACKAGES += \
+    Ripple
+
 # Blur
 ifeq ($(TARGET_ENABLE_BLUR), true)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
