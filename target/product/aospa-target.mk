@@ -25,6 +25,9 @@ $(call inherit-product, vendor/aospa/target/product/version.mk)
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
+# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Aperture
 PRODUCT_PACKAGES += \
     Aperture
