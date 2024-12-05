@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     LMOFreeform \
     LMOFreeformSidebar
 
+# Camelot
+PRODUCT_PACKAGES += \
+    Camelot
+
 # DesktopMode
 PRODUCT_PACKAGES += \
     DesktopMode
