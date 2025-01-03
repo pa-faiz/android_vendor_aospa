@@ -31,6 +31,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+# Twelve
+PRODUCT_PACKAGES += \
+    Twelve
+
 # LMOFreeform
 PRODUCT_PACKAGES += \
     LMOFreeform \
