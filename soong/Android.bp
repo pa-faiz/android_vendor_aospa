@@ -4,6 +4,22 @@
 //
 // AOSPA Soong Configurations
 
+bootstrap_go_package {
+    name: "soong-mkdir",
+    pkgPath: "aospa/soong/mkdir",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+    ],
+    srcs: [
+        "mkdir/init.go",
+        "mkdir/mkdir.go",
+    ],
+    pluginFor: ["soong_build"],
+}
+
 soong_config_module_type {
     name: "needs_camera_boottime",
     module_type: "cc_defaults",
