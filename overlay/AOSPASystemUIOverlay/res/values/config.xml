@@ -33,4 +33,8 @@
     <!-- Biometric Dialog values -->
     <integer name="biometric_dialog_text_gravity">1</integer> <!-- CENTER_HORIZONTAL -->
 
+    <!-- SystemUI Plugins that can be loaded on user builds. -->
+    <string-array name="config_pluginAllowlist" translatable="false">
+        <item>com.libremobileos.clock</item>
+    </string-array>
 </resources>
