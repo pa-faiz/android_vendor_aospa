@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest>
+
+  <project path="vendor/qcom/opensource/agm" name="aospa-op13/android_vendor_qcom_opensource_agm" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="aospa-op13/android_hardware_qcom_audio" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="aospa-op13/android_vendor_qcom_opensource_audio-hal_st-hal" remote="github" revision="vauxite-8750" />
+  <project path="vendor/qcom/opensource/audioreach-graphservices" name="aospa-op13/android_vendor_qcom_opensource_audioreach-graphservices" remote="github" revision="vauxite-8750" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="aospa-op13/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/dataipa" name="aospa-op13/android_vendor_qcom_opensource_dataipa" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/display-core" name="aospa-op13/android_vendor_qcom_opensource_display-core" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/display-intf" name="aospa-op13/android_vendor_qcom_opensource_display-intf" remote="github" revision="vauxite-8750"/>
+  <project path="vendor/qcom/opensource/pal" name="aospa-op13/android_vendor_qcom_opensource_arpal-lx" remote="github" revision="vauxite-8750"/>
+  <project path="hardware/qcom/display" name="aospa-op13/android_hardware_qcom_display" remote="github" revision="vauxite-8750"/>
+  <project path="hardware/qcom/gps" name="aospa-op13/android_hardware_qcom_gps" remote="github" revision="vauxite-8750"/>
+  <project path="hardware/qcom/media" name="aospa-op13/android_hardware_qcom_media" remote="github" revision="vauxite-8750"/>
+
+</manifest>
