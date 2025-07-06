@@ -45,6 +45,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     protected boolean mShowSign = false;
     protected String mUnits = "";
     protected boolean mContinuousUpdates = false;
+    protected String mTextStart, mTextEnd;
 
     protected int mMinValue = 0;
     protected int mMaxValue = 100;
@@ -68,10 +69,11 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         try {
             mShowSign = a.getBoolean(R.styleable.CustomSeekBarPreference_showSign, mShowSign);
             String units = a.getString(R.styleable.CustomSeekBarPreference_units);
-            if (units != null)
-                mUnits = " " + units;
+            if (units != null) mUnits = units;
             mContinuousUpdates = a.getBoolean(
                     R.styleable.CustomSeekBarPreference_continuousUpdates, false);
+            mTextStart = a.getString(R.styleable.CustomSeekBarPreference_textStart);
+            mTextEnd = a.getString(R.styleable.CustomSeekBarPreference_textEnd);
         } finally {
             a.recycle();
         }
@@ -96,7 +98,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         if (mMaxValue < mMinValue)
             mMaxValue = mMinValue;
 
-        mSeekBar = new SeekBar(context, attrs);
+        setSelectable(false);
         setLayoutResource(R.layout.preference_custom_seekbar);
     }
 
@@ -117,25 +119,8 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     @Override
     public void onBindViewHolder(PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
-        try
-        {
-            // move our seekbar to the new view we've been given
-            ViewParent oldContainer = mSeekBar.getParent();
-            ViewGroup newContainer = (ViewGroup) holder.findViewById(R.id.seekbar);
-            if (oldContainer != newContainer) {
-                // remove the seekbar from the old view
-                if (oldContainer != null) {
-                    ((ViewGroup) oldContainer).removeView(mSeekBar);
-                }
-                // remove the existing seekbar (there may not be one) and add ours
-                newContainer.removeAllViews();
-                newContainer.addView(mSeekBar, ViewGroup.LayoutParams.FILL_PARENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT);
-            }
-        } catch (Exception ex) {
-            Log.e(TAG, "Error binding view: " + ex.toString());
-        }
 
+        mSeekBar = (SeekBar) holder.findViewById(R.id.seekbar);
         mSeekBar.setMax(getSeekValue(mMaxValue));
         mSeekBar.setProgress(getSeekValue(mValue));
         mSeekBar.setEnabled(isEnabled());
@@ -144,6 +129,17 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         mResetImageView = (ImageView) holder.findViewById(R.id.reset);
         mMinusImageView = (ImageView) holder.findViewById(R.id.minus);
         mPlusImageView = (ImageView) holder.findViewById(R.id.plus);
+
+        if (mTextEnd != null || mTextStart != null) {
+            holder.findViewById(R.id.label_frame).setVisibility(View.VISIBLE);
+            TextView startText = (TextView) holder.findViewById(android.R.id.text1);
+            TextView endText = (TextView) holder.findViewById(android.R.id.text2);
+            startText.setText(mTextStart);
+            endText.setText(mTextEnd);
+            // hide plus and minus button if we show bottom text
+            mMinusImageView.setVisibility(View.GONE);
+            mPlusImageView.setVisibility(View.GONE);
+        }
 
         updateValueViews();
 
@@ -165,22 +161,16 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     }
 
     protected String getTextValue(int v) {
-        return (mShowSign && v > 0 ? "+" : "") + String.valueOf(v) + mUnits;
+        return String.valueOf(v) + mUnits;
     }
 
     protected void updateValueViews() {
         if (mValueTextView != null) {
-            String add = "";
-            if (mValue == mDefaultValue) {
-                add = " (" + getContext().getString(
-                        R.string.custom_seekbar_default_value) + ")";
-            }
-            String textValue = getTextValue(mValue) + add;
+            String textValue = getTextValue(mValue);
             if (mTrackingTouch && !mContinuousUpdates) {
                 textValue = getTextValue(mTrackingValue);
             }
-            mValueTextView.setText(getContext().getString(
-                    R.string.custom_seekbar_value, textValue));
+            mValueTextView.setText(textValue);
         }
 
         if (mResetImageView != null) {
