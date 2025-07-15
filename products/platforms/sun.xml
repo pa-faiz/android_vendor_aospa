@@ -10,7 +10,6 @@
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="aospa-op13/android_vendor_qcom_opensource_audio-hal_st-hal" remote="github" revision="vauxite-8750" />
   <project path="vendor/qcom/opensource/audioreach-graphservices" name="aospa-op13/android_vendor_qcom_opensource_audioreach-graphservices" remote="github" revision="vauxite-8750" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="aospa-op13/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="vauxite-8750"/>
-  <project path="vendor/qcom/opensource/dataipa" name="aospa-op13/android_vendor_qcom_opensource_dataipa" remote="github" revision="vauxite-8750"/>
   <project path="vendor/qcom/opensource/display-core" name="aospa-op13/android_vendor_qcom_opensource_display-core" remote="github" revision="vauxite-8750"/>
   <project path="vendor/qcom/opensource/display-intf" name="aospa-op13/android_vendor_qcom_opensource_display-intf" remote="github" revision="vauxite-8750"/>
   <project path="vendor/qcom/opensource/pal" name="aospa-op13/android_vendor_qcom_opensource_arpal-lx" remote="github" revision="vauxite-8750"/>
