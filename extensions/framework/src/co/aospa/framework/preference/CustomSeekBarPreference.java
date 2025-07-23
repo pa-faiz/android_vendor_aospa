@@ -46,6 +46,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     protected String mUnits = "";
     protected boolean mContinuousUpdates = false;
     protected String mTextStart, mTextEnd;
+    protected boolean mShowButtons;
 
     protected int mMinValue = 0;
     protected int mMaxValue = 100;
@@ -74,6 +75,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
                     R.styleable.CustomSeekBarPreference_continuousUpdates, false);
             mTextStart = a.getString(R.styleable.CustomSeekBarPreference_textStart);
             mTextEnd = a.getString(R.styleable.CustomSeekBarPreference_textEnd);
+            mShowButtons = a.getBoolean(R.styleable.CustomSeekBarPreference_showButtons, true);
         } finally {
             a.recycle();
         }
@@ -98,7 +100,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         if (mMaxValue < mMinValue)
             mMaxValue = mMinValue;
 
-        setSelectable(false);
         setLayoutResource(R.layout.preference_custom_seekbar);
     }
 
@@ -136,7 +137,9 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             TextView endText = (TextView) holder.findViewById(android.R.id.text2);
             startText.setText(mTextStart);
             endText.setText(mTextEnd);
-            // hide plus and minus button if we show bottom text
+        }
+
+        if (!mShowButtons) {
             mMinusImageView.setVisibility(View.GONE);
             mPlusImageView.setVisibility(View.GONE);
         }
