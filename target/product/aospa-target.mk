@@ -128,8 +128,7 @@ $(call inherit-product-if-exists, vendor/aospa/translations/translations.mk)
 # Paranoid Packages
 PRODUCT_PACKAGES += \
     ParanoidPapers \
-    ParanoidSystemUI \
-    ParanoidThemePicker
+    ParanoidSystemUI
 
 # Paranoid Sense
 PRODUCT_PACKAGES += \
@@ -240,6 +239,10 @@ PRODUCT_PACKAGES += \
     libtextclassifier_annotator_universal_model \
     libtextclassifier_actions_suggestions_universal_model \
     libtextclassifier_lang_id_model
+
+# Theme Picker
+PRODUCT_PACKAGES += \
+    ThemePicker
 
 # WiFi
 PRODUCT_PACKAGES += \
