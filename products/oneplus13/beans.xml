@@ -77,6 +77,10 @@
   <project path="vendor/qcom/opensource/wlan/platform" name="vendor_qcom_opensource_wlan_platform" remote="gitlab-ssh" revision="sun-oplus"/>
 
   <!-- Base Manifest -->
+  <project path="vendor/nxp/opensource/driver" name="aospa-op13/vendor_nxp_opensource_driver" remote="github" revision="sun-oplus">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-kernel-dlkm-vendor-product.mk" src="nfc_kernel_dlkm_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/nfc-kernel-dlkm-vendor-board.mk" src="nfc_kernel_dlkm_vendor_board.mk"/>
+  </project>
   <project path="vendor/qcom/opensource/dataipa" name="aospa-op13/android_vendor_qcom_opensource_dataipa" remote="github" revision="vauxite-8750">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/dataipa_dlkm_vendor_board.mk" src="dataipa_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_dlkm_vendor_product.mk" src="dataipa_dlkm_vendor_product.mk"/>
