@@ -13,6 +13,8 @@
   <project path="device/oneplus/sm8750-common" name="aospa-op13/android_device_oneplus_sm8750-common" remote="github" revision="vauxite"/>
 
   <!-- Kernel Dependencies -->
+  <project path="vendor/oplus" name="aospa-op13/android_vendor_oplus_opensource" remote="github" revision="beryl"/>
+
   <!-- AU_LINUX_KERNEL.PLATFORM.4.0.R1.00.00.00.061.155 -->
   <project name="aospa-op13/kernel_platform_build" path="kernel_platform/build/kernel" remote="github" revision="pakala">
     <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
