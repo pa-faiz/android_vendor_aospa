@@ -77,6 +77,12 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
   </project>
 
+  <!-- AU_TECHPACK_VIDEO.LA.5.0.R1.00.00.00.000.073 -->
+  <project path="vendor/qcom/opensource/video-driver" name="aospa-op13/vendor_qcom_opensource_video-drivers" remote="github" revision="sun-oplus">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
+  </project>
+
   <!-- AU_TECHPACK_WLAN.LA.1.0.R1.00.00.00.000.096 -->
   <project path="vendor/qcom/opensource/wlan/wlan-devicetree" name="aospa-op13/vendor_qcom_proprietary_wlan-devicetree" remote="github" revision="sun-oplus"/>
   <project path="vendor/qcom/opensource/wlan/qcacld-3.0" name="aospa-op13/vendor_qcom_opensource_wlan_qcacld-3.0" remote="github" revision="sun-oplus"/>
