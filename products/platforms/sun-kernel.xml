@@ -65,10 +65,6 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
   </project>
   <project remote="clo-la" name="platform/vendor/opensource/video-devicetree" path="vendor/qcom/opensource/video-devicetree" revision="85b5da295d865c090ddf0474767c967d620d9b9d" upstream="refs/heads/video-kernel.lnx.5.0.r1-rel"/>
-  <project remote="clo-la" name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="32b2f05c8c5cfbc119bdacf70043508f4a539017" upstream="refs/heads/video-kernel.lnx.5.0.r1-rel" groups="cyborg">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
-  </project>
   <project remote="clo-la" name="platform/vendor/qcom/opensource/video-qapi" path="vendor/qcom/opensource/video-qapi" revision="76d9ff9f6c3a10cd8807a76f3f664f88e0b850a4" upstream="refs/heads/video-userspace.lnx.codec2.5.0.r1-rel"/>
 
   <!-- AU_TECHPACK_WLAN.LA.1.0.R1.00.00.00.000.096 -->
