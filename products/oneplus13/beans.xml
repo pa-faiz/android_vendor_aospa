@@ -5,92 +5,13 @@
 -->
 <manifest>
   <include name="../platforms/sun.xml"/>
-  <include name="../platforms/sun-kernel.xml"/>
 
   <!-- Device Dependencies -->
   <project path="hardware/oplus" name="aospa-op13/android_hardware_oplus" remote="github" revision="beryl"/>
   <project path="device/oneplus/oneplus13" name="aospa-op13/android_device_oneplus_oneplus13" remote="github" revision="vauxite"/>
   <project path="device/oneplus/sm8750-common" name="aospa-op13/android_device_oneplus_sm8750-common" remote="github" revision="vauxite"/>
 
-  <!-- Kernel Dependencies -->
-  <project path="vendor/oplus" name="aospa-op13/android_vendor_oplus_opensource" remote="github" revision="beryl"/>
-
-  <!-- AU_LINUX_KERNEL.PLATFORM.4.0.R1.00.00.00.061.172 -->
-  <project name="aospa-op13/kernel_platform_build" path="kernel_platform/build/kernel" remote="github" revision="pakala">
-    <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
-    <linkfile dest="kernel_platform/build/build_utils.sh" src="build_utils.sh"/>
-    <linkfile dest="kernel_platform/build/all-variants.sh" src="all-variants.sh"/>
-    <linkfile dest="kernel_platform/build/brunch" src="brunch"/>
-    <linkfile dest="kernel_platform/build/build_abl.sh" src="build_abl.sh"/>
-    <linkfile dest="kernel_platform/build/build_module.sh" src="build_module.sh"/>
-    <linkfile dest="kernel_platform/build/android/export_headers.py" src="android/export_headers.py"/>
-    <linkfile dest="kernel_platform/build/android/merge_dtbs.py" src="android/merge_dtbs.py"/>
-    <linkfile dest="kernel_platform/build/android/merge_dtbs.sh" src="android/merge_dtbs.sh"/>
-    <linkfile dest="kernel_platform/build/android/prepare_vendor.sh" src="android/prepare_vendor.sh"/>
-    <linkfile dest="kernel_platform/build/BUILD.bazel" src="BUILD.bazel"/>
-    <linkfile dest="kernel_platform/build/build-tools/path" src="build-tools/path"/>
-    <linkfile dest="kernel_platform/build/_setup_env.sh" src="_setup_env.sh"/>
-    <linkfile dest="kernel_platform/build/multi-switcher.sh" src="multi-switcher.sh"/>
-    <linkfile dest="kernel_platform/build/kleaf" src="kleaf"/>
-    <linkfile dest="kernel_platform/build/abi" src="abi"/>
-    <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
-    <linkfile dest="kernel_platform/build/_wrapper_common.sh" src="_wrapper_common.sh"/>
-    <linkfile dest="kernel_platform/WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
-    <linkfile dest="kernel_platform/MODULE.bazel" src="kleaf/bzlmod/bazel.MODULE.bazel"/>
-    <linkfile dest="kernel_platform/WORKSPACE.bzlmod" src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod"/>
-  </project>
-  <project path="kernel_platform/qcom/opensource/devicetree" name="aospa-op13/vendor_qcom_proprietary_devicetree" remote="github" revision="sun-oplus">
-    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="."/>
-  </project>
-  <project path="kernel_platform/common" name="aospa-op13/android_kernel_qcom_sm8750"  remote="github" revision="beryl">
-    <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
-  </project>
-  <project path="kernel_platform/msm-kernel" name="aospa-op13/android_kernel_oneplus_sm8750" remote="github" revision="beryl">
-    <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
-    <linkfile dest="kernel_platform/build/qcom_build_extensions" src="qcom_build_extensions"/>
-  </project>
-
-  <!-- AU_TECHPACK_AUDIO_HANDSET.LA.10.0.R1.00.00.00.000.081 -->
-  <project path="vendor/qcom/opensource/audio-devicetree" name="aospa-op13/vendor_qcom_proprietary_audio-devicetree" remote="github" revision="sun-oplus"/>
-  <project path="vendor/qcom/opensource/audio-kernel" name="aospa-op13/vendor_qcom_opensource_audio-kernel-ar" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" src="audio_kernel_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" src="audio_kernel_product_board.mk"/>
-  </project>
-
-  <!-- AU_TECHPACK_CAMERA.LA.5.0.R1.00.00.00.000.092 -->
-  <project path="vendor/qcom/opensource/camera-devicetree" name="aospa-op13/vendor_qcom_proprietary_camera-devicetree" remote="github" revision="sun-oplus"/>
-  <project path="vendor/qcom/opensource/camera-kernel" name="aospa-op13/vendor_qcom_opensource_camera-kernel" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
-  </project>
-
-  <!-- AU_TECHPACK_CV.LA.2.1.R1.00.00.00.000.046 -->
-  <project path="vendor/qcom/opensource/eva-kernel" name="aospa-op13/vendor_qcom_opensource_eva-kernel" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/eva_kernel_product.mk" src="eva_kernel_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/eva_kernel_board.mk" src="eva_kernel_board.mk"/>
-  </project>
-
-  <!-- AU_TECHPACK_DISPLAY.LA.5.0.R1.00.00.00.000.083 -->
-  <project path="vendor/qcom/opensource/display-devicetree" name="aospa-op13/vendor_qcom_proprietary_display-devicetree" remote="github" revision="sun-oplus"/>
-  <project path="vendor/qcom/opensource/display-drivers" name="aospa-op13/vendor_qcom_opensource_display-drivers" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
-  </project>
-
-  <!-- AU_TECHPACK_WLAN.LA.1.0.R1.00.00.00.000.096 -->
-  <project path="vendor/qcom/opensource/wlan/wlan-devicetree" name="aospa-op13/vendor_qcom_proprietary_wlan-devicetree" remote="github" revision="sun-oplus"/>
-  <project path="vendor/qcom/opensource/wlan/qcacld-3.0" name="aospa-op13/vendor_qcom_opensource_wlan_qcacld-3.0" remote="github" revision="sun-oplus"/>
-  <project path="vendor/qcom/opensource/wlan/platform" name="aospa-op13/vendor_qcom_opensource_wlan_platform" remote="github" revision="sun-oplus"/>
-
-  <!-- Base Manifest -->
-  <project path="vendor/nxp/opensource/driver" name="aospa-op13/vendor_nxp_opensource_driver" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-kernel-dlkm-vendor-product.mk" src="nfc_kernel_dlkm_vendor_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/nfc-kernel-dlkm-vendor-board.mk" src="nfc_kernel_dlkm_vendor_board.mk"/>
-  </project>
-  <project path="vendor/qcom/opensource/dataipa" name="aospa-op13/android_vendor_qcom_opensource_dataipa" remote="github" revision="vauxite-8750">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/dataipa_dlkm_vendor_board.mk" src="dataipa_dlkm_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_dlkm_vendor_product.mk" src="dataipa_dlkm_vendor_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_binary_vendor_product.mk" src="dataipa_binary_vendor_product.mk"/>
-  </project>
+  <!-- Kernel -->
+  <project path="device/oneplus/oneplus13-kernel" name="aospa-op13/android_device_oneplus_oneplus13-kernel" remote="github" revision="beryl"/>
 
 </manifest>
