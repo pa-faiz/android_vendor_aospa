@@ -67,6 +67,9 @@
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
 
+    <!-- Whether the battery percentage setting is available in Settings > Battery -->
+    <bool name="config_battery_percentage_setting_available">false</bool>
+
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
