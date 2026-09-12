@@ -232,7 +232,7 @@ if [ -d "$DIR_ROOT/kernel_platform/" ] && (
         KERNEL_VARIANT=gki
         ;;
     esac
-    eval "${EXTRA_KERNEL_FLAGS}" ANDROID_KERNEL_OUT="${TARGET_KERNEL_OUT}" KERNEL_VARIANT="${KERNEL_VARIANT}" ./kernel_platform/build/android/prepare_vendor.sh
+    ./kernel_platform/build/kernel/oplus/oplus_build_kernel.sh
 fi
 
 # Build a specific module(s)
