@@ -1,3 +1,6 @@
+# AOSPA build identity
+system_internal_prop(aospa_build_prop)
+
 # PIHooks
 system_public_prop(pih_disable_prop)
 
