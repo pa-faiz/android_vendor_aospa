@@ -17,31 +17,29 @@
 
   <!-- AU_LINUX_KERNEL.PLATFORM.4.0.R1.00.00.00.061.172 -->
   <project name="aospa-op13/kernel_platform_build" path="kernel_platform/build/kernel" remote="github" revision="pakala">
-    <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
-    <linkfile dest="kernel_platform/build/build_utils.sh" src="build_utils.sh"/>
-    <linkfile dest="kernel_platform/build/all-variants.sh" src="all-variants.sh"/>
-    <linkfile dest="kernel_platform/build/brunch" src="brunch"/>
-    <linkfile dest="kernel_platform/build/build_abl.sh" src="build_abl.sh"/>
-    <linkfile dest="kernel_platform/build/build_module.sh" src="build_module.sh"/>
-    <linkfile dest="kernel_platform/build/android/export_headers.py" src="android/export_headers.py"/>
-    <linkfile dest="kernel_platform/build/android/merge_dtbs.py" src="android/merge_dtbs.py"/>
-    <linkfile dest="kernel_platform/build/android/merge_dtbs.sh" src="android/merge_dtbs.sh"/>
-    <linkfile dest="kernel_platform/build/android/prepare_vendor.sh" src="android/prepare_vendor.sh"/>
-    <linkfile dest="kernel_platform/build/BUILD.bazel" src="BUILD.bazel"/>
-    <linkfile dest="kernel_platform/build/build-tools/path" src="build-tools/path"/>
-    <linkfile dest="kernel_platform/build/_setup_env.sh" src="_setup_env.sh"/>
-    <linkfile dest="kernel_platform/build/multi-switcher.sh" src="multi-switcher.sh"/>
-    <linkfile dest="kernel_platform/build/kleaf" src="kleaf"/>
-    <linkfile dest="kernel_platform/build/abi" src="abi"/>
-    <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
-    <linkfile dest="kernel_platform/build/_wrapper_common.sh" src="_wrapper_common.sh"/>
-    <linkfile dest="kernel_platform/WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
-    <linkfile dest="kernel_platform/MODULE.bazel" src="kleaf/bzlmod/bazel.MODULE.bazel"/>
-    <linkfile dest="kernel_platform/WORKSPACE.bzlmod" src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod"/>
-  </project>
-  <project path="kernel_platform/qcom/opensource/devicetree" name="aospa-op13/vendor_qcom_proprietary_devicetree" remote="github" revision="sun-oplus">
-    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="."/>
-  </project>
+      <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
+      <linkfile dest="kernel_platform/build/build_utils.sh" src="build_utils.sh"/>
+      <linkfile dest="kernel_platform/build/all-variants.sh" src="all-variants.sh"/>
+      <linkfile dest="kernel_platform/build/brunch" src="brunch"/>
+      <linkfile dest="kernel_platform/build/build_abl.sh" src="build_abl.sh"/>
+      <linkfile dest="kernel_platform/build/build_module.sh" src="build_module.sh"/>
+      <linkfile dest="kernel_platform/build/android/export_headers.py" src="android/export_headers.py"/>
+      <linkfile dest="kernel_platform/build/android/merge_dtbs.py" src="android/merge_dtbs.py"/>
+      <linkfile dest="kernel_platform/build/android/merge_dtbs.sh" src="android/merge_dtbs.sh"/>
+      <linkfile dest="kernel_platform/build/android/prepare_vendor.sh" src="android/prepare_vendor.sh"/>
+      <linkfile dest="kernel_platform/build/BUILD.bazel" src="BUILD.bazel"/>
+      <linkfile dest="kernel_platform/build/build-tools/path" src="build-tools/path"/>
+      <linkfile dest="kernel_platform/build/_setup_env.sh" src="_setup_env.sh"/>
+      <linkfile dest="kernel_platform/build/multi-switcher.sh" src="multi-switcher.sh"/>
+      <linkfile dest="kernel_platform/build/kleaf" src="kleaf"/>
+      <linkfile dest="kernel_platform/build/abi" src="abi"/>
+      <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
+      <linkfile dest="kernel_platform/build/_wrapper_common.sh" src="_wrapper_common.sh"/>
+      <linkfile dest="kernel_platform/WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
+      <linkfile dest="kernel_platform/MODULE.bazel" src="kleaf/bzlmod/bazel.MODULE.bazel"/>
+      <linkfile dest="kernel_platform/WORKSPACE.bzlmod" src="kleaf/bzlmod/bazel.WORKSPACE.bzlmod"/>
+    </project>
+  <project path="kernel_platform/qcom/opensource/devicetree" name="aospa-op13/vendor_qcom_proprietary_devicetree" remote="github" revision="sun-oplus" />
   <project path="kernel_platform/common" name="aospa-op13/android_kernel_qcom_sm8750"  remote="github" revision="beryl">
     <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
   </project>
@@ -75,12 +73,6 @@
   <project path="vendor/qcom/opensource/display-drivers" name="aospa-op13/vendor_qcom_opensource_display-drivers" remote="github" revision="sun-oplus">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
-  </project>
-
-  <!-- AU_TECHPACK_VIDEO.LA.5.0.R1.00.00.00.000.073 -->
-  <project path="vendor/qcom/opensource/video-driver" name="aospa-op13/vendor_qcom_opensource_video-drivers" remote="github" revision="sun-oplus">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
   </project>
 
   <!-- AU_TECHPACK_WLAN.LA.1.0.R1.00.00.00.000.096 -->
