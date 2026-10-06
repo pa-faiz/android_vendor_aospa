@@ -74,7 +74,6 @@
 
   <!-- AU_TECHPACK_WLAN.LA.1.0.R1.00.00.00.000.075 -->
   <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="8f0c7a61180f12d1ad63fa0fd39498fbadd834b8" upstream="refs/heads/wlan-api.lnx.1.0.r231-rel"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="f0811a2862df2ccc098f8b6124d27a7bc502fb7b" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.r153-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="daa044befd4e14146992c55e0e195982408706e9" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r52-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="2bd2830dafe79b219953166747b9761b630c687f" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r52-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/wlan_techpack.mk" src="wlan_techpack.mk"/>
