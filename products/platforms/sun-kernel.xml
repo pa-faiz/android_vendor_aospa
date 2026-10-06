@@ -59,10 +59,6 @@
   <project remote="clo-la" name="platform/vendor/opensource/mm-devicetree" path="vendor/qcom/opensource/mm-devicetree" revision="f9e97b38ab0e03a772f1f1ffcfb6a066fe6bdee1" upstream="refs/heads/display-kernel.lnx.11.0.r1-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="8ad476843f80cda1127cb0c332f264b34cc37a70" upstream="refs/heads/display-le.lnx.5.0.r1-rel"/>
 
-  <!-- AU_TECHPACK_GRAPHICS.LA.15.0.R1.00.00.00.000.053 -->
-  <project remote="clo-la" name="platform/vendor/qcom/opensource/graphics-devicetree" path="vendor/qcom/opensource/graphics-devicetree" revision="295adba43b4a2f9656c9ca7bc8614e1663839852" upstream="refs/heads/gfx-devicetree-oss.lnx.1.0.r1-rel"/>
-  <project remote="clo-la" name="platform/vendor/qcom/opensource/graphics-kernel" path="vendor/qcom/opensource/graphics-kernel" revision="bece57cfebd375a7c70fe9e32e5a17826ca6e4cf" upstream="refs/heads/gfx-kernel.lnx.1.0.r43-rel"/>
-
   <!-- AU_TECHPACK_VIDEO.LA.5.0.R1.00.00.00.000.049 -->
   <project remote="clo-la" name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="277ac79fc5957f1e8448ab2571360330ce32589e" upstream="refs/heads/video-kernel.lnx.5.0.r1-rel" groups="cyborg">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
