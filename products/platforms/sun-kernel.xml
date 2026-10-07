@@ -50,7 +50,6 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/mm_driver_product.mk" src="mm_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/mm_driver_board.mk" src="mm_driver_board.mk"/>
   </project>
-  <project remote="clo-la" name="platform/vendor/opensource/display-intf" path="vendor/qcom/opensource/display-intf" revision="1160906d5b67a9425558437a62066f3dd6b48034" upstream="refs/heads/display-intf.lnx.1.0.r1-rel"/>
   <project remote="clo-la" name="platform/vendor/opensource/mm-devicetree" path="vendor/qcom/opensource/mm-devicetree" revision="f9e97b38ab0e03a772f1f1ffcfb6a066fe6bdee1" upstream="refs/heads/display-kernel.lnx.11.0.r1-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/display/sdm-composer" path="vendor/qcom/opensource/display/sdm-composer" revision="8ad476843f80cda1127cb0c332f264b34cc37a70" upstream="refs/heads/display-le.lnx.5.0.r1-rel"/>
 
