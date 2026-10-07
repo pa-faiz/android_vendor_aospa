@@ -101,5 +101,10 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_dlkm_vendor_product.mk" src="dataipa_dlkm_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_binary_vendor_product.mk" src="dataipa_binary_vendor_product.mk"/>
   </project>
+  <project path="vendor/qcom/opensource/dsp-devicetree" name="aospa-op13/vendor_qcom_proprietary_dsp-devicetree" remote="github" revision="sun-oplus"/>
+  <project path="vendor/qcom/opensource/dsp-kernel" name="aospa-op13/vendor_qcom_opensource_dsp-kernel" remote="github" revision="sun-oplus">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/dsp_kernel_board.mk" src="dsp_kernel_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dsp_kernel_product.mk" src="dsp_kernel_product.mk"/>
+  </project>
 
 </manifest>
