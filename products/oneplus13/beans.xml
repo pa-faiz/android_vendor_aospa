@@ -45,7 +45,6 @@
   </project>
   <project path="kernel_platform/msm-kernel" name="aospa-op13/android_kernel_oneplus_sm8750" remote="github" revision="beryl">
     <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
-    <linkfile dest="kernel_platform/build/qcom_build_extensions" src="qcom_build_extensions"/>
   </project>
 
   <!-- AU_TECHPACK_AUDIO_HANDSET.LA.10.0.R1.00.00.00.000.081 -->
