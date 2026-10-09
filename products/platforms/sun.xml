@@ -14,6 +14,6 @@
   <project path="vendor/qcom/opensource/display-intf" name="aospa-op13/android_vendor_qcom_opensource_display-intf" remote="github" revision="vauxite-8750"/>
   <project path="vendor/qcom/opensource/pal" name="aospa-op13/android_vendor_qcom_opensource_arpal-lx" remote="github" revision="vauxite-8750"/>
   <project path="hardware/qcom/display" name="aospa-op13/android_hardware_qcom_display" remote="github" revision="vauxite-8750"/>
-  <project path="hardware/qcom/gps" name="aospa-op13/android_hardware_qcom_gps" remote="github" revision="vauxite-8750"/>
+  <project path="hardware/qcom/gps" name="pa-faiz/android_hardware_qcom_gps" remote="github" revision="vauxite-8750"/>
 
 </manifest>
