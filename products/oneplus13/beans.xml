@@ -16,6 +16,7 @@
   <project path="vendor/oplus" name="aospa-op13/android_vendor_oplus_opensource" remote="github" revision="beryl"/>
 
   <!-- AU_LINUX_KERNEL.PLATFORM.4.0.R1.00.00.00.061.172 -->
+  <project name="aospa-op13/kernel_platform_oplus" path="kernel_platform/oplus" remote="github" revision="pakala"/>
   <project name="aospa-op13/kernel_platform_build" path="kernel_platform/build/kernel" remote="github" revision="pakala">
       <linkfile dest="kernel_platform/tools/bazel" src="kleaf/bazel.sh"/>
       <linkfile dest="kernel_platform/build/build_utils.sh" src="build_utils.sh"/>
